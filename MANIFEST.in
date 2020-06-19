@@ -1,0 +1,10 @@
+include CHANGELOG.md
+include README.md
+include requirements.in
+include requirements_dev.in
+
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+
+recursive-include doxygen_github *.json
+recursive-include doxygen_github *.py *.jpg *.png *.gif
