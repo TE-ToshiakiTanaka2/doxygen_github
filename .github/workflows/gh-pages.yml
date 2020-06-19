@@ -12,9 +12,6 @@ jobs:
             - name: Checkout
               uses: actions/checkout@master
 
-            - name: Checkout submodules
-              uses: textbook/git-checkout-submodule-action@master
-
             - name: Generate Doxygen
               uses: mattnotmitt/doxygen-action@v1
 
