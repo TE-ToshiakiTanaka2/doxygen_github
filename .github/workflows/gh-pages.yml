@@ -20,10 +20,11 @@ jobs:
 
             - name: Commit files
               run: |
-                  git config --local user.email "action@github.com"
-                  git config --local user.name "GitHub Action"
-                  cd docs/html
-                  git commit -m "Add changes" -a
+                  git config --local user.email ${GITHUB_ACTOR}@domain.io
+                  git config --local user.name ${GITHUB_ACTOR}
+                  cd ${GITHUB_WORKSPACE}/docs/html
+                  git add ${GITHUB_WORKSPACE}/docs/html
+                  git commit -m "Add changes"
 
             - name: Push changes
               uses: ad-m/github-push-action@master
