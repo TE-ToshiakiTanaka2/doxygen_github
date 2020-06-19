@@ -9,7 +9,11 @@ jobs:
     deploy:
         runs-on: ubuntu-18.04
         steps:
-            - uses: actions/checkout@v2
+            - name: Checkout
+              uses: actions/checkout@v2
 
-            - name: doxygen
+            - name: Checkout submodules
+              uses: textbook/git-checkout-submodule-action@master
+
+            - name: Doxygen
               uses: mattnotmitt/doxygen-action@v1
