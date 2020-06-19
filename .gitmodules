@@ -1,0 +1,4 @@
+[submodule "docs/html"]
+	path = docs/html
+	url = git@github.com:TE-ToshiakiTanaka2/doxygen_github.git
+	branch = gh-pages
