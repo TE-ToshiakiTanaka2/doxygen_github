@@ -21,7 +21,7 @@ jobs:
             - name: Commit and Push
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-                  GITHUB_USER: ${{ GITHUB_ACTOR }}
-                  GITHUB_EMAIL: ${{ GITHUB_ACTOR }}@domain.io
-                  GITHUB_REPOSITORY: ${{ GITHUB_REPOSITORY }}
+                  GITHUB_USER: ${ GITHUB_ACTOR }
+                  GITHUB_EMAIL: ${ GITHUB_ACTOR }@domain.io
+                  GITHUB_REPOSITORY: ${ GITHUB_REPOSITORY }
               run: ./doxygen.sh
