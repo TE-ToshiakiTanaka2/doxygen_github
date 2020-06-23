@@ -13,17 +13,14 @@ def get_version():
 
 
 
-## Sample Class
+## @class Sample Class
 #
 # Detail Sample Class Name.
+# @brief 説明(簡単)
+# @details 説明（詳細）
+# @warning 警告メッセージ
+# @note メモ
 class Sample:
-    ## Sample Class
-    # @class Sample Class
-    # @brief 説明(簡単)
-    # @details 説明（詳細）
-    # @warning 警告メッセージ
-    # @note メモ
-
     def __init__(self):
         ##
         # @fn __init__()
