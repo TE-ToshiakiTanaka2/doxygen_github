@@ -12,11 +12,13 @@ https://python-3-patterns-idioms-test.readthedocs.io/en/latest/Fronting.html
 Add functionality or logic (e.g. logging, caching, authorization) to a resource
 without changing its interface.
 """
-
+## @package doxygen_github.patterns.structural.proxy
 from typing import Union
 
 
 class Subject:
+    ##
+    # @class Subject
     """
     As mentioned in the document, interfaces of both RealSubject and Proxy should
     be the same, because the client should be able to use RealSubject or Proxy with
@@ -25,15 +27,27 @@ class Subject:
     able to use RealSubject or Proxy interchangeably with no change in code.
     """
     def do_the_job(self, user: str) -> None:
+        ##
+        # @fn do_the_job()
+        # @param user: str
+        # @return None
+        # @brief the client should be able to use RealSubject or Proxy with no code change.
         raise NotImplementedError()
 
 
 class RealSubject(Subject):
+    ##
+    # @class RealSubject
     """
     This is the main job doer. External services like payment gateways can be a
     good example.
     """
     def do_the_job(self, user: str) -> None:
+        ##
+        # @fn do_the_job()
+        # @param user: str
+        # @return None
+        # @brief Call do the job.
         print(f"I am doing the job for {user}")
 
 
