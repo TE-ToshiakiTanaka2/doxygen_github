@@ -1,7 +1,21 @@
 """ A short description of the project """
+## @package doxygen_github
+# Document for this module.
+#
+# Doxygen用のSampleパッケージです．
 __version__ = "0.1.0"
 
+## get_version : Version情報の取得
+#
+# Doxygen用のSample Function名です．
+def get_version():
+    return __version__
 
+
+
+## Sample Class
+#
+# Detail Sample Class Name.
 class Sample:
     ## Sample Class
     # @class Sample Class
@@ -21,4 +35,3 @@ class Sample:
         # @details 説明（詳細）
         # @warning 警告メッセージ
         # @note メモ
-
