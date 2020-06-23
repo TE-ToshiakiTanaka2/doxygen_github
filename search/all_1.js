@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['sample_1',['Sample',['../classdoxygen__github_1_1Sample.html',1,'doxygen_github.Sample'],['../classSample.html',1,'Sample']]]
+  ['get_5fversion_1',['get_version',['../namespacedoxygen__github.html#af247a15957cdc542a1cb48c5f6eeeb2f',1,'doxygen_github']]]
 ];
