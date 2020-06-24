@@ -56,12 +56,14 @@ class Proxy(Subject):
         self._real_subject = RealSubject()
 
     def do_the_job(self, user: str) -> None:
+        ##
+        # @fn do_the_job()
+        # @param user: str
+        # @return None
         """
         logging and controlling access are some examples of proxy usages.
         """
-
         print(f"[log] Doing the job for {user} is requested.")
-
         if user == "admin":
             self._real_subject.do_the_job(user)
         else:
